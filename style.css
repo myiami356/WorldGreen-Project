@@ -1,0 +1,274 @@
+/* Menentukan ukuran dan penataan carousel item */
+.carousel-item {
+    position: relative;
+    height: 500px; /* Tetapkan tinggi carousel item */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Menetapkan ukuran gambar agar selalu menyesuaikan ukuran carousel */
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%); /* Memberikan efek gelap pada gambar */
+}
+
+/* Menata kotak nama perusahaan */
+.company-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Menempatkan kotak tepat di tengah */
+    border-radius: 70px;
+    background: rgba(2, 53, 16, 0.7); /* Warna hijau dengan transparansi */
+    border: 8px solid rgb(132, 247, 128); /* Border hijau */
+    padding: 60px;
+    max-width: 900px;
+    text-align: center;
+    z-index: 2;
+    /* Menetapkan ukuran kotak agar tetap konsisten */
+    width: 80%; /* Atur lebar kotak agar responsif, atau bisa menggunakan nilai tetap misalnya 800px */
+    min-width: 600px; /* Agar kotak tidak terlalu kecil */
+}
+
+/* Menata judul perusahaan */
+.company-box h1 {
+    font-size: 50px;
+    color: #d4ff6a; /* Warna hijau terang untuk teks */
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+}
+
+/* Menata deskripsi perusahaan */
+.company-box p {
+    color: white;
+    font-size: 18px;
+}
+
+
+/* Styling untuk section About Us */
+.about-us {
+    padding: 60px 0;
+}
+
+/* Styling untuk custom container */
+.custom-container {
+    background: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: 30px;
+}
+
+/* Styling untuk judul About Us dan h2 */
+.section-title, h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 span {
+    color: #17a2b8;
+}
+
+/* Styling untuk paragraf */
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk gambar profil */
+.profile-img, .founder img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-img {
+    width: 100%; /* Membuat gambar mengikuti lebar container */
+    height: auto; /* Menyesuaikan tinggi agar proporsional */
+    max-width: 300px; /* Menetapkan batas ukuran maksimal */
+    border-radius: 10px; /* Agar gambar sedikit melengkung di sudut */
+    object-fit: cover; /* Agar gambar tidak terdistorsi, tetap cropped jika perlu */
+}
+
+.founder img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+/* Styling untuk bagian Founder */
+.founder {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.founder div {
+    text-align: left;
+}
+
+/* Penataan untuk mobile-friendly */
+@media (max-width: 767px) {
+    .founder {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .founder img {
+        margin-bottom: 15px;
+    }
+}
+
+
+.testimonials {
+    padding: 70px 0;
+  }
+  
+  .testimonial-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(148, 26, 26, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #e5ffa9; 
+  }
+  
+  
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial-img-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+  
+.testimonial-img {
+    border-radius: 50%;
+    width: 120%;
+    height: 120%;
+    object-fit: cover; /* Pastikan gambar menyesuaikan ukuran dengan benar */
+    border: 5px solid #fff;
+}
+
+  
+  .testimonial-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .testimonial-role {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    color: #333;
+    padding: 0 10px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins', serif;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #f5ffd1;
+    margin-bottom: 30px;
+  }
+  
+
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+        /* Styling untuk container kiri */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        /* Kotak untuk form login */
+        .form-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Styling untuk logo dan nama perusahaan */
+        .logo {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+
+        .company-name {
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+        }
+
+   .product-card {
+    background-color: #f4f4f4; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    transition: transform 0.3s ease; /* Optional hover effect */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card-body {
+    padding-top: 15px;
+}
+
+.product-card-btn {
+    background-color: #28a745; /* Green button for eco-friendly theme */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
